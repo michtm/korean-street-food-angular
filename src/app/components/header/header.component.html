@@ -4,21 +4,21 @@
 +------------------------------------------+
 -->
 <header role="banner" class="header navbar navbar-expand flex-column flex-md-row shadow px-4">
-    <a class="header__brand navbar-brand fs-1 mx-4 pb-0" href="/">Brand</a>
+    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" class="header__brand navbar-brand fs-1 mx-4 pb-0">Brand</a>
     <nav role="navigation" class="header__navbar">
         <ul class="navbar-nav flex-row">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+                <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link active">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/food-menu">Menu</a>
+                <a routerLink="/food-menu" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Menu</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>
     <div class="header__actions flex-row ms-md-auto">
-        <button type="button" class="btn btn-success">Commander</button>
+        <a routerLink="/order-now" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-success">Commander</a>
     </div>
 </header>
